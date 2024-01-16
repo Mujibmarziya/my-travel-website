@@ -452,6 +452,7 @@ background: rgba(19, 19, 24, 0.05);
 }
 .why-cards{
     flex-direction: column;
+
     width: 95%;
     margin:10px auto;
    
@@ -506,7 +507,7 @@ background: rgba(19, 19, 24, 0.05);
 }
 .ourapp{
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(65, 117, 42, 0.605),rgb(151, 241, 131));
+    background-image: linear-gradient(to bottom, rgba(52, 144, 9, 0.779),white);
    position: relative;
    bottom: -1790px;
    width: 95%;
