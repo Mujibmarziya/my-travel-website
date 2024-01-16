@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section{
+    margin-top: 7px;
+    min-height: 40px;
+    /* background-color: aqua; */
+}
+.nav-section{
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-part{
+    width: 50%;
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 10px;
+    
+}
+.menu{
+    width: 50%;
+    /* border: 1px solid rgb(128, 0, 13); */
+   
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    color: black;
+}
+
+.menu ul>li{
+    color: black;
+text-align: center;
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.menu ul>li:hover{
+    color: orange;
+}
+
+.hamburger{
+    display: none;
+}
+
+.banner{
+    /* linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) */
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00)), url('./images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size: cover;
+   
+   
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.only-text{
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    padding: 0 15px;
+}
+.inputt-part{
+    min-height: 70px;
+    border: 1px solid white ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 7px;
+    background-color: rgba(196, 194, 192, 0.447);
+}
+
+.select{
+    height: 52px;
+    width: 134px;
+    background-color: aliceblue;
+    color: rgb(78, 81, 81);
+    padding: 0px 18px;
+    border-radius: 7px;
+    border-color: transparent;
+}
+
+.text-image-section{
+    height: 100vh;
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+.text-part{
+    width: 50%;
+    height: 100%;
+   
+    /* border: 1px solid rgb(128, 0, 13); */
+    padding: 25px 10px;
+}
+.text-part p, ul>li, button, .text-text p{
+    color: rgba(19, 19, 24, 0.70);
+
+    font-family: Mulish;
+    margin-top: 10px;
+    font-size: 14px;
+    
+
+}
+.image-part{
+    width: 50%;
+   
+
+/*     
+    border: 1px solid rgb(11, 128, 0); */
+}
+.image-part img{
+    height: 480px;
+    width: 100%;
+    border-radius: 7px;
+
+/*     
+   display: block;
+   margin: 0 auto; */
+    object-fit: cover;
+}
+
+
+.grid{
+    height: 100vh;
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 10px auto;
+}
+
+.one{ 
+    grid-area: one;
+ }
+.two{ 
+    grid-area: two;
+}
+.three {grid-area: three; }
+.four { grid-area: four;}
+.fifth { grid-area: five; }
+.six {grid-area: six; }
+.seven {grid-area: seven; }
+
+
+
+.grid-container{
+    display: grid;
+    max-width: 940px;
+    margin: auto;
+    gap: 10px;
+    /* padding: 0 12px; */
+    grid-template-columns: repeat(8,108.7px);
+    grid-template-rows: repeat(3,280px);
+    /* grid-template-columns: 155px 155px 155px; */
+    grid-template-areas: 'one one one one two two two two'
+    'three three three four four four five five'
+    'six six six six seven seven seven seven'
+   
+    ;
+    
+    
+    
+}
+
+.grid-container img{
+    width: 100%;
+    /* height: 496px; */
+    height: 100%;
+    object-fit: cover;
+     border-radius: 7px;
+}
+
+.why-coose-us{
+    height: 100vh;
+    max-width: 940px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 400px;
+    /* background-color: aqua; */
+}
+.text-why{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.why-cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+    margin-top: 32px;
+}
+.first{
+    width: 50%;
+    border: 1px solid red;
+    min-height: 70px;
+}
+.first h1, img, p{
+    margin-bottom: 12px;
+}
+.second{
+    width:50%;
+    border: 1px solid red;
+    min-height: 70px;
+}
+.second h1, img, p{
+    margin-bottom: 12px;
+}
+.third{
+    width: 50%; 
+    margin:10px auto ;
+}
+.third h1, img, p{
+    margin-bottom: 12px;
+}
+/* .why-cards{
+    height: 100vh;
+    max-width: 940px;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 420px;
+
+} */
+
+.input-image{
+    max-width: 940px;
+    margin: 99px auto;
+    display: flex;
+    height:422px;
+    gap: 15px;
+   
+}
+.input-part{
+    width: 50%; 
+    margin:10px auto ;
+    border: 1px solid red;
+    border-radius: 8px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    background-color: transparent;
+    
+}
+hr{
+    margin-bottom: 15px;
+}
+
+.input-part input{
+    border: none;
+    margin-bottom: 15px;
+    width: 393px;
+    height: 52px;
+    padding: 15px;
+    border-radius: 8px;
+background: rgba(19, 19, 24, 0.05);
+}
+.imagee-part{
+    width: 50%; 
+    margin:10px auto ;
+    border: 1px solid rgb(0, 255, 21);
+    /* min-height: 60px; */
+    /* background-image: url('./images/Rectangle\ 8\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    /* background-attachment: fixed; */
+   border-radius: 7px;
+   border: none;
+   position: relative;
+   
+}
+.content{
+    position: absolute;
+    bottom: 34px;
+    right: 10px;
+    transform: rotate(-19.628deg);
+}
+.ourapp{
+    max-width: 940px;
+    height: 50vh;
+    margin: auto;
+    background-image: linear-gradient(to bottom, orange,rgb(239, 187, 147));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+   
+}
+.app{
+    margin-top: 10px;
+}
+.footer{
+    width: 100%;
+    height: 70vh;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+    
+}
+.logo-part2{
+    display: flex;
+    justify-content: center;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    
+    gap: 30px;
+    
+    
+}
+.socials i{
+    font-size: 20px;
+}
+.footerhead .logo-part2, .socials, p {
+    margin-bottom: 20px;
+} 
+
+.p{
+    text-align: center; width: 80%; margin:15px auto;
+}
+.button{
+    background-color: #FF5400;
+}
+
+@media  screen and (max-width: 600px) {
+    .nav-section{
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        padding: 9px 15px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .logo-part{
+        
+        /* border: 1px solid green; */
+        width: 70%;
+        
+    }
+
+    .inputt-part{
+        
+        border: 1px solid white ;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 30px;
+        border-radius: 7px;
+        background-color: rgba(196, 194, 192, 0.447);
+    }
+
+    .select{
+        
+        width: 202px;
+      
+  }
+  .banner-button{
+    width: 202px;
+    background-color: orange;
+    border-radius: 7px;
+  }
+
+  .text-image-section{
+    flex-direction: column;
+  }
+  .text-part{
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .image-part{
+    margin-top: 14px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .only-text{
+    margin-top: 400px;
+  }
+  .grid-container{
+    
+    
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,280px);
+    grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six' 'seven';
+  }
+  .grid{
+    width: 100%;
+  }
+  .why-coose-us{
+
+    
+   position: relative;
+   bottom: -1100px;
+}
+.text-why{
+    padding: 0px 10px;
+}
+.why-cards{
+    flex-direction: column;
+    width: 95%;
+    margin:10px auto;
+   
+}
+.first{
+    width: 100%;
+    height: 270px;
+   
+}
+.second{
+    width: 100%;
+    height: 270px;
+}
+.third{
+    width: 95%;
+    height: 270px;
+    margin:10px auto;
+}
+.input-image{
+    flex-direction: column;
+       /* gap: 5px; */
+   position: relative;
+   bottom: -1790px;
+
+}
+.hr{
+    width: 514px;
+    
+}
+.input-part{
+    width: 95%; 
+    margin:40px auto ;
+    margin-top: -350px;
+    border: 1px solid red;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:40px 25px 110px 25px;
+    background-color: transparent;
+    border-radius: 8px;
+    
+}
+.input-part input,h1,p{
+    text-align: start;
+    width: 100%;
+}
+.imagee-part{
+    
+    width: 95%;
+    margin:10px auto ;
+}
+.ourapp{
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(65, 117, 42, 0.605),rgb(151, 241, 131));
+   position: relative;
+   bottom: -1790px;
+   width: 95%;
+   margin:10px auto ;
+
+}
+.button{
+    background-color: rgb(223, 93, 12);
+}
+
+
+.ourapp h1{
+    text-align: center;
+}
+.footer{
+    flex-direction: column;
+       
+   position: relative;
+   bottom: -1790px;
+   width: 100%;
+   margin:10px auto ;
+   height: 50vh;
+   padding: 10px;
+
+}
+.logo-part2{
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.footerhead p, .socials, hr{
+   margin-bottom: 30px;
+}
+.p{
+    width: 100%;
+    padding: 9px;
+    /* border: 1px solid navajowhite; */
+}
+}
+ /* git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Mujibmarziya/my-travel-website.git
+git push -u origin main */
